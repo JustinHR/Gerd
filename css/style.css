@@ -98,7 +98,7 @@ main {
     /*Background*/
     width: 100%;
     height: 100vh;
-    background-image: url(../images/Grey_Halloween_Cobweb_Background4289601.jpg);
+    background-image: url(/images/Grey_Halloween_Cobweb_Background4289601.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
