@@ -331,3 +331,66 @@ button {
     background-color: rgb(238, 238, 238);
     padding: 5vh 0vh 10vh 0vh;
 }
+
+@media (width <= 425px) {
+    * {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .topnav {
+        flex-direction: column;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .mainimg img {
+        max-width: 100%;
+        height: auto;
+        min-width: 100px;
+    }
+
+    .logocontainer {
+        align-items: center;
+    }
+
+    .socialscontainer {
+        align-items: center;
+    }
+}
+
+@media (max-width: 530px) {
+    .copyrightlinks {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 720px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media (orientation: portrait) {
+    nav {
+        flex-direction: column;
+    }
+
+    .firstname,
+.lastname,
+.email,
+.city,
+.date,
+.kies,
+.question,
+.register,
+.addres {
+        margin: 2vh 0;
+    }
+}
