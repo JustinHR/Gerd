@@ -122,7 +122,7 @@ main {
 }
 
 .kopen a {
-    
+
     color: orangered;
     padding: 10px;
     border-radius: 360px;
@@ -332,7 +332,7 @@ button {
     padding: 5vh 0vh 10vh 0vh;
 }
 
-@media (width <= 425px) {
+@media (width <=425px) {
     * {
         flex-direction: column;
         align-items: center;
@@ -344,6 +344,12 @@ button {
 
     body {
         overflow-x: hidden;
+    }
+
+    .headervideo {
+        max-width: 100%;
+        height: auto;
+        min-width: 100px;
     }
 
     .main {
@@ -383,14 +389,14 @@ button {
     }
 
     .firstname,
-.lastname,
-.email,
-.city,
-.date,
-.kies,
-.question,
-.register,
-.addres {
+    .lastname,
+    .email,
+    .city,
+    .date,
+    .kies,
+    .question,
+    .register,
+    .addres {
         margin: 2vh 0;
     }
 }
