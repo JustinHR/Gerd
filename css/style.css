@@ -28,7 +28,7 @@ nav a {
 }
 
 .navlogo {
-    margin: 55px;
+    margin: 5px;
 }
 
 .logo {
@@ -353,12 +353,6 @@ button {
 
     .main {
         width: 100%;
-    }
-
-    .mainimg img {
-        max-width: 100%;
-        height: auto;
-        min-width: 100px;
     }
 
     .logocontainer {
