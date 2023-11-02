@@ -32,7 +32,7 @@ nav a {
 }
 
 .logo {
-    width: 50px;
+    width: 5px;
 }
 
 a {
@@ -312,23 +312,61 @@ input:invalid {
     margin-top: 2vh;
 }
 
-button {
-    text-align: center;
-    display: block;
-    font-size: 1.5rem;
-    color: white;
-    background-size: 100% 100%;
-    background-position: 0px 0px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
-    background-image: radial-gradient(49% 81% at 45% 47%, #FFE20345 0%, #073AFF00 100%), radial-gradient(113% 91% at 17% -2%, #0048FFFF 1%, #FF000000 99%), radial-gradient(142% 91% at 83% 7%, #00FFD0FF 1%, #FF000000 99%), radial-gradient(142% 91% at -6% 74%, #2000FFFF 1%, #FF000000 99%), radial-gradient(142% 91% at 111% 84%, #003DFFFF 0%, #8500FFFF 100%);
-    padding: 2vh 6vh;
-    border: 1px solid black;
-    border-radius: 1vh;
-}
-
 .sectionaankoop {
     justify-content: center;
     background-color: rgb(238, 238, 238);
     padding: 5vh 0vh 10vh 0vh;
+}
+
+/*hhhhhhhhhhhhhhhhhhhhhhhhhhhhh*/
+@media (max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    .navlogo {
+        text-align: center;
+    }
+
+    .topnav {
+        align-items: center;
+        text-align: center;
+    }
+
+    .headervideo {
+        width: 100%;
+        height: auto;
+    }
+
+    .maintext2 {
+        margin: 2vh;
+    }
+}
+
+
+
+@media (max-width: 530px) {
+    .copyrightlinks {
+        flex-direction: column;
+    }
+}
+
+@media (orientation: portrait) {
+    nav {
+        flex-direction: column;
+    }
+
+    .firstname,
+    .lastname,
+    .email,
+    .city,
+    .date,
+    .kies,
+    .question,
+    .register,
+    .addres {
+        margin: 2vh 0;
+    }
 }
 
 @media (width <=425px) {
@@ -351,45 +389,32 @@ button {
         min-width: 100px;
     }
 
+    .boxblur, .subtextbackground, .footerbox {
+        margin: 1vh 5vh;
+        padding: 1vh;
+    }
+
+    .subtext {
+        margin: 1vh 1vh;
+        padding: 1vh;
+    }
+
     .main {
         width: 100%;
     }
 
+    .footerbackground {
+        background-repeat: repeat;
+    }
+
     .logocontainer {
         align-items: center;
+        padding-right: 6vh;
     }
 
     .socialscontainer {
         align-items: center;
-    }
-}
-
-@media (max-width: 530px) {
-    .copyrightlinks {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 720px) {
-    .row {
-        flex-direction: column;
-    }
-}
-
-@media (orientation: portrait) {
-    nav {
-        flex-direction: column;
-    }
-
-    .firstname,
-    .lastname,
-    .email,
-    .city,
-    .date,
-    .kies,
-    .question,
-    .register,
-    .addres {
-        margin: 2vh 0;
+        flex-direction: row;
+        padding-left: 15vh;
     }
 }
