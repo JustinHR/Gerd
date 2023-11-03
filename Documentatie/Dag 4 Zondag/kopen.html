@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Gerd</title>
+</head>
+<body>
+    <section class="sectionaankoop" id="aankoopform">
+        <div class="aankoopform">
+            <h1>Aankoop</h1>
+
+            <form action="bedankt.html" method="POST">
+                <div class="name">
+                    <div class="firstname">
+                        <label for="name">Voornaam</label>
+                        <input required type="text" name="name" id="name" placeholder="John">
+                    </div>
+
+                    <div class="lastname">
+                        <label for="lastname">Achternaam</label>
+                        <input required type="text" name="lastname" id="lastname" placeholder="Richards">
+                    </div>
+                </div>
+
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input required type="email" name="email" id="email" placeholder="example@gmail.com">
+                </div>
+
+                <div class="citydate">
+                    <div class="city">
+                        <label for="city">Woonplaats</label>
+                        <input required type="text" name="city" id="city" placeholder="Rotterdam">
+                    </div>
+
+                    <div class="date">
+                        <label for="birthdate">Geboortedatum</label>
+                        <input required type="date" name="birthdate" id="birthdate">
+                    </div>
+                </div>
+
+                <div class="addres">
+                    <label for="addres">Addres</label>
+                    <input required type="text" name="addres" id="addres" placeholder="Wijnhaven 107A">
+                </div>
+
+                <div class="kies">
+                    <label for="kies">Jouw bank</label>
+                    <select required id="kies" name="kies">
+                        <option value="" disabled selected>Kies jouw bank</option>
+                        <option value="0">Ideal</option>
+                        <option value="1">Rabobank</option>
+                        <option value="2">Paypal</option>
+                    </select>
+                </div>
+
+                <div class="register">
+                    <label for="option">Inschijven voor nieuwsbrief?</label>
+                    <div class="yesno">
+                        <input type="radio" name="option" id="ja" value="ja">
+                        <label for="ja">Ja</label>
+
+                        <input type="radio" name="option" id="nee" value="nee">
+                        <label for="nee">Nee</label>
+                    </div>
+                </div>
+
+                <div class="checkbox">
+                    <input required type="checkbox" name="terms" id="terms">
+                    <label for="terms">Ik ga accord met de voorwaarden.</label>
+                </div>
+
+                <div class="submit">
+                    <button type="submit">Kopen</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
